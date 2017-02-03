@@ -1,0 +1,26 @@
+<% provide(:title, "Posts") %>
+<h1>Posts</h1>
+
+<p><%= link_to "Write a new post!", new_post_path %></p>
+
+<ul class="posts" >
+  <% unless @posts == nil %>
+    <% @posts.each do |post| %>
+      <li>
+        <p>
+          <b><%= post.title %></b>
+        </p>
+        <p>
+          <%= post.body %>
+            
+          </p>
+        <p>
+          <% if logged_in? %>
+            Author: <%= User.find(post.user_id).name %>
+          <% end %>
+        </p>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
