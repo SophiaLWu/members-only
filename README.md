@@ -4,4 +4,4 @@ This is the Members Only! Project from Project: Authentication under section Rub
 
 This project involves building an "exclusive clubhouse", in which members of the clubhouse can write embarassing posts about non-members. Only members can see who the author of a given post is.
 
-(See this app in action!)[https://salty-mesa-44756.herokuapp.com/]
+[See this app in action!](https://salty-mesa-44756.herokuapp.com/)
