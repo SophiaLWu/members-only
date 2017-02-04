@@ -1,7 +1,7 @@
 <% provide(:title, "Posts") %>
 <h1>Posts</h1>
 
-<p><%= link_to "Write a new post!", new_post_path %></p>
+<p class="new_post"><%= link_to "Write a new post!", new_post_path %></p>
 
 <ul class="posts" >
   <% unless @posts == nil %>
@@ -16,7 +16,7 @@
           </p>
         <p>
           <% if logged_in? %>
-            Author: <%= User.find(post.user_id).name %>
+            <em>Author: <%= User.find(post.user_id).name %></em>
           <% end %>
         </p>
       </li>
